@@ -1,0 +1,43 @@
+{
+  "name": "svelte-tailwind-snowpack",
+  "version": "0.0.1",
+  "author": {
+    "name": "Agney Menon",
+    "email": "agney@outlook.in"
+  },
+  "keywords": [
+    "csa-template"
+  ],
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "svelte": "^3.24.1",
+    "tailwindcss": "^1.7.5"
+  },
+  "devDependencies": {
+    "@snowpack/app-scripts-svelte": "^1.8.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/svelte": "^3.0.0",
+    "autoprefixer": "^9.8.6",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.2.13",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "postcss-load-config": "^2.1.0",
+    "prettier": "^2.1.1",
+    "snowpack": "^2.9.3",
+    "svelte-preprocess": "^4.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
