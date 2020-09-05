@@ -1,5 +1,6 @@
 <script>
 	import TailwindStyles from './TailwindStyles.svelte';
+	import Button from './components/Button.svelte';
 	
 	const message = 'Learn Svelte';
 </script>
@@ -38,4 +39,10 @@
 	<header>
 		<h1>A Tiny Adventure</h1>
 	</header>
+	<main>
+	<Button></Button>
+	</main>
+	<footer>
+	
+	</footer>
 </div>
