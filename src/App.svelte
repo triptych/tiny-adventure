@@ -36,6 +36,9 @@
 </script>
 
 <style>
+  :global(body) {
+    background-image: url(/img/vintage-wallpaper.png);
+  }
   .App-logo {
     animation: App-logo-scale infinite 1.6s ease-in-out alternate;
   }
@@ -49,7 +52,7 @@
   }
 </style>
 
-<div class="text-center font-serif bg-yellow-600 w-screen h-screen">
+<div class="text-center font-serif w-screen h-screen text-indigo-100">
   <!--
 	<header class="bg-gray-100 h-screen flex justify-center items-center flex-col text-3xl">
 		<img src="/logo.svg" class="App-logo pointer-events-none m-4 h-64" alt="logo" />
@@ -69,7 +72,7 @@
   <header>
     <h1>A Tiny Adventure</h1>
   </header>
-  <main>
+  <main class="container mx-auto">
     <!--<Button></Button> -->
     <Field dir={txt} />
 
