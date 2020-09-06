@@ -53,13 +53,14 @@
 
   function showLoc(location) {
     //text = world[location.y][location.x];
-    console.log("worldArr", worldArr);
-    console.log("location.x", location.x);
-    console.log("location.y", location.y);
+    console.log("worldArr: ", worldArr);
+    console.log("location.x: ", location.x);
+    console.log("location.y: ", location.y);
+    text = "";
     worldArr.forEach((ele) => {
       console.log("element:", ele);
       if (ele.trigger.x == location.x && ele.trigger.y == location.y) {
-        text = ele.description;
+        text += " " + ele.description;
       }
     });
   }
