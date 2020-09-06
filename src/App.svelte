@@ -7,6 +7,7 @@
   import Inventory from "./components/Inventory.svelte";
 
   import { goldcoins } from "./stores/goldcoins.js";
+  import { items } from "./stores/items";
 
   let name = "Barry The Barbarian";
   let ran = ["A giant monster", "A treasure", "A friend"];
@@ -30,6 +31,7 @@
   function handleDirection(event) {
     console.log("handleDirection:", event.detail.text);
     txt = event.detail.text;
+
     //temp to test subscriptions
     goldcoins.update((n) => Math.floor(Math.random() * 10));
   }
@@ -93,3 +95,6 @@
   </main>
   <footer><small>By Andrew Wooldridge</small></footer>
 </div>
+<!--
+<div>items: {$items}</div>
+-->
