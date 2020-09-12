@@ -14,6 +14,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "ecsy": "^0.4.2",
+    "rxjs": "^6.6.3",
     "svelte": "^3.24.1",
     "tailwindcss": "^1.7.5"
   },
