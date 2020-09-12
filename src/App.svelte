@@ -9,10 +9,22 @@
   import { goldcoins } from "./stores/goldcoins.js";
   import { items } from "./stores/items";
 
+  // rxjs
+  import { timer } from "rxjs";
+
+  // ecsy
+  import { World } from "ecsy";
+
   let name = "Barry The Barbarian";
   let ran = ["A giant monster", "A treasure", "A friend"];
 
   let txt = "loading...";
+  // rxjs
+  let tick = timer(0, 1000);
+
+  // ecsy
+  let EcsyWorld = new World();
+  console.log("EcsyWorld", EcsyWorld);
 
   function updateMessage() {
     // let num = Math.floor(Math.random() * random.length);
@@ -93,7 +105,10 @@
       <div slot="right" />
     </Row>
   </main>
-  <footer><small>By Andrew Wooldridge</small></footer>
+  <footer>
+    <small>By Andrew Wooldridge</small>
+    <div>Timer: {$tick}</div>
+  </footer>
 </div>
 <!--
 <div>items: {$items}</div>
